@@ -29,6 +29,31 @@
 			//console.log(str);
 		}
 
+	//TODO - Le 3e bouton qui sert à copier dans le clipboard
+	document.getElementById("copy").onclick = function() {
+		
+		//On crée la variable pour stocker le contenu inversé
+		//let copyText = document.getElementById("inversed").value;
+		//console.log(copyText + " copied");
+		let copyText = document.getElementById("inversed");
+
+
+		//On prend le contenu du champ inversed
+		copyText.select();
+  		copyText.setSelectionRange(0, 99999); /* For mobile devices */
+
+  		//TODO - On met dans le clipboard
+  		//navigator.clipboard.writeText(copyText.value);
+
+
+
+
+
+
+  		//Petit tooltip d'alerte
+  		//alert("Texte copié : " + copyText.value);
+		}
+
 		// TODO - check quel champ est rempli + vider celui qui ne l'est pas
 		// TODO - faire système temps réel
 		// TODO - message erreur si vide
