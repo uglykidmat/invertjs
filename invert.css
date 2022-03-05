@@ -1,0 +1,85 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Fredoka:wght@500&display=swap');
+
+html{
+	margin:0;
+	padding:0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+/*	vertical-align: baseline;*/
+	font-family: 'Open Sans', sans-serif;
+}
+
+header #header{
+	margin: auto;
+	
+}
+header h1 {
+	text-align: center;
+	font-family: 'Fredoka', sans-serif;
+	
+}
+
+	div#buttonsection
+{
+	margin: auto;
+	border: 3px solid #12B7A4;
+	display: flex;
+	max-width: fit-content;
+	margin-bottom: 10px;
+	border-radius: 10px;
+}
+	div#directsection
+{
+	margin: auto;
+	border: 3px solid #B71226;
+	display: flex;
+	max-width: fit-content;
+	margin-bottom: 10px;
+	border-radius: 10px;
+}
+
+body section#main div#content form
+{
+	padding: 1em;
+	margin: auto;
+	/*max-width: fit-content;*/
+	display: flex;
+	text-align: center;
+	align-items: center;
+	justify-content: center;
+	/*align-items: center;*/
+
+	border-radius: 10px;
+}
+
+textarea
+{
+	margin: 0 1em 0 1em;
+	padding: 10px;
+	/*max-width: 40%;*/
+	max-height: 10em;
+	resize: vertical;
+	font-family: 'Open Sans', sans-serif;
+}
+
+body section#main div#content button
+{
+	padding: 1em;
+	margin: 0 0.2em 0 0.2em;
+	font-family: 'Open Sans', sans-serif;
+	}
+/*
+#alert1 {
+	background-color: #4CAF50; 
+  border: none;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+}
+*/
+

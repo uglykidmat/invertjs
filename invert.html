@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Invert</title>
+		<link rel="stylesheet" type="text/css" href="invert.css">
+		<meta charset=“UTF-8”>
+	</head>
+
+<body>
+	<header id="header">
+		<h1>INVERSION DE TEXTE</h1>
+	</header>
+
+	<section id="main">
+		<div id="content">
+			<div id="buttonsection">
+				<form name ="form1" onsubmit="return false">
+				<div id="texte1">
+					<textarea name ="texte1" id="normal" class="textarea" placeholder="Ton texte ici Corentin"></textarea>
+				</div>
+
+				<button id="inverser">Inverser</button>
+				<button id="reset">Reset</button>
+				
+				<div id="texte2">
+					<textarea name ="texte2"id="inversed" class="textarea"></textarea>
+				</div>
+
+				</form>
+			</div>
+
+			<div id="directsection">
+				<form name ="form2" onsubmit="return false">
+					<textarea name ="texte1direct" id="normaldirect" class="textarea" placeholder="Ton texte ici Corentin"></textarea>
+					<textarea name ="texte2direct"id="inverseddirect" class="textarea"></textarea>
+				</form>
+			</div>
+		</div>
+	</section>
+	<script type="text/javascript" src="invert.js" charset="utf-8"></script>
+</body>
+</html>
