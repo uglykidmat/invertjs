@@ -1,4 +1,6 @@
 	const header = document.getElementById("header");
+	const textField = document.form2.texte1direct.value;
+	const textField2 = document.form2.texte2direct.value;
 
 	//La fonction qui prend une string et inverse l'ordre des caractères
 	function reverseString (s){
@@ -19,7 +21,6 @@
 
 		//On push dans le champ 2 "inversé" la valeur inversée du champ 1
 		document.form1.texte2.value += reverseString(str);
-
 		console.log(document.getElementById("inversed").value);
 		}
 
@@ -37,7 +38,6 @@
 		//console.log(copyText + " copied");
 		let copyText = document.getElementById("inversed");
 
-
 		//On prend le contenu du champ inversed
 		copyText.select();
   		copyText.setSelectionRange(0, 99999); /* For mobile devices */
@@ -45,15 +45,39 @@
   		//TODO - On met dans le clipboard
   		//navigator.clipboard.writeText(copyText.value);
 
-
-
-
-
-
   		//Petit tooltip d'alerte
   		//alert("Texte copié : " + copyText.value);
 		}
 
-		// TODO - check quel champ est rempli + vider celui qui ne l'est pas
-		// TODO - faire système temps réel
-		// TODO - message erreur si vide
+	// TODO - check quel champ est rempli + vider celui qui ne l'est pas
+	// TODO - faire système temps réel
+	// TODO - message erreur si vide
+
+	const text1direct = document.getElementById("normaldirect").value;
+	const text2direct = document.getElementById("inverseddirect").value;
+
+	function directReverse (){
+
+		const activeTextarea = document.activeElement.id;
+		console.log(activeTextarea);
+		
+		if (activeTextarea == "normaldirect") {
+		let textField = document.form2.texte1direct.value;
+		console.log(textField);
+		document.form2.texte2direct.value = textField.split("").reverse().join("");
+		}
+
+		else if (activeTextarea == "inverseddirect") {
+		let textField2 = document.form2.texte2direct.value;
+		console.log(textField2);
+		document.form2.texte1direct.value = textField2.split("").reverse().join("");
+
+		}
+		return null;
+	}
+	document.getElementById("normaldirect").onkeyup = directReverse;
+	document.getElementById("inverseddirect").onkeyup = directReverse;
+	document.getElementById("directlog").onclick = function() {
+		console.log(textField + " - " + textField2);
+		}
+
