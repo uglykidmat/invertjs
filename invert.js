@@ -9,11 +9,8 @@
 
 	//Le 1er bouton qui va prendre le texte 1 et le mettre en inversé dans champ 2
 	document.getElementById("inverser").onclick = function() {
-		//header.style.color = "#10a190";
-
 		//On vide le champ 2 au clic sur bouton inverser
 		document.getElementById("inversed").value = "";
-
 		//On prend le contenu du champ texte 1 "normal" aka à inverser
 		var str = document.getElementById("normal").value;
 		console.log(str);
@@ -27,8 +24,8 @@
 	//Le 2e bouton qui reset le champ 2 à vide
 	document.getElementById("reset").onclick = function() {
 		document.getElementById("inversed").value = "";
-			//console.log(str);
 		}
+	// TODO - message erreur si champ 1 "à inverser" vide
 
 	//TODO - Le 3e bouton qui sert à copier dans le clipboard
 	document.getElementById("copy").onclick = function() {
@@ -50,14 +47,12 @@
 		}
 
 	// TODO - check quel champ est rempli + vider celui qui ne l'est pas
-	// TODO - faire système temps réel
-	// TODO - message erreur si vide
 
+	//Fonction temps réel
 	const text1direct = document.getElementById("normaldirect").value;
 	const text2direct = document.getElementById("inverseddirect").value;
 
 	function directReverse (){
-
 		const activeTextarea = document.activeElement.id;
 		console.log(activeTextarea);
 		
@@ -66,12 +61,10 @@
 		console.log(textField);
 		document.form2.texte2direct.value = textField.split("").reverse().join("");
 		}
-
 		else if (activeTextarea == "inverseddirect") {
 		let textField2 = document.form2.texte2direct.value;
 		console.log(textField2);
 		document.form2.texte1direct.value = textField2.split("").reverse().join("");
-
 		}
 		return null;
 	}
@@ -80,4 +73,3 @@
 	document.getElementById("directlog").onclick = function() {
 		console.log(textField + " - " + textField2);
 		}
-
