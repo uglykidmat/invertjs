@@ -11,18 +11,22 @@ html{
 	font-family: 'Open Sans', sans-serif;
 }
 
-header #header{
-	margin: auto;
-	
-}
-header h1 {
-	text-align: center;
-	font-family: 'Fredoka', sans-serif;
-	
+body {
+	/*background: linear-gradient(rgba(255,255,255,.5), rgba(255,255,255,.5)),url(https://images.unsplash.com/photo-1646860760743-92a9ffbd7093?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2070&q=80) no-repeat;*/
+	background: linear-gradient(rgba(255,255,255,.7), rgba(255,255,255,.7)),url(./photo-glace.avif) no-repeat;
+	background-size: cover;
 }
 
-	div#buttonsection
-{
+header #header{
+	margin: auto;
+}
+
+header h1 {
+	text-align: center;
+	font-family: 'Fredoka', sans-serif;	
+}
+
+div#buttonsection {
 	margin: auto;
 	border: 3px solid #12B7A4;
 	display: flex;
@@ -30,8 +34,8 @@ header h1 {
 	margin-bottom: 10px;
 	border-radius: 10px;
 }
-	div#directsection
-{
+
+div#directsection {
 	margin: auto;
 	border: 3px solid #B71226;
 	display: flex;
@@ -40,8 +44,7 @@ header h1 {
 	border-radius: 10px;
 }
 
-body section#main div#content form
-{
+body section#main div#content form {
 	padding: 1em;
 	margin: auto;
 	/*max-width: fit-content;*/
@@ -50,12 +53,10 @@ body section#main div#content form
 	align-items: center;
 	justify-content: center;
 	/*align-items: center;*/
-
 	border-radius: 10px;
 }
 
-textarea
-{
+textarea {
 	margin: 0 1em 0 1em;
 	padding: 10px;
 	/*max-width: 40%;*/
@@ -64,8 +65,18 @@ textarea
 	font-family: 'Open Sans', sans-serif;
 }
 
-body section#main div#content button
-{
+.textareadirect {
+	margin: 0 1em 0 1em;
+	padding: 10px;
+	/*max-width: 40%;*/
+	max-height: 10em;
+	resize: vertical;
+	font-family: 'Open Sans', sans-serif;
+}
+
+
+
+body section#main div#content button {
 	padding: 1em;
 	margin: 0 0.2em 0 0.2em;
 	font-family: 'Open Sans', sans-serif;
@@ -83,3 +94,26 @@ body section#main div#content button
 }
 */
 
+div.alert{
+	display: flex;
+	max-width: fit-content;
+	padding: 2px 5px;
+	margin: 5px auto 5px auto;
+	border: 3px solid #B71226;
+	background-color: rgba(183, 18, 38, 0.3);
+	border-radius: 10px;
+}
+
+div.warning{
+	display: flex;
+	max-width: fit-content;
+	padding: 2px 5px;
+	margin: 5px auto 5px auto;
+	border: 3px solid #B8441C;
+	background-color: rgba(184, 68, 28, 0.3);
+	border-radius: 10px;
+}
+
+span.warningemoji{
+
+}
