@@ -86,6 +86,7 @@ const text2direct = document.getElementById("inverseddirect").value;
 		}
 		if (longueurTexte < 20) {
 			document.getElementById('warning1').style.display = 'none';
+			document.getElementById('warning2').style.display = 'none';
 		}
 		if (longueurTexte >= 30){
 			document.getElementById('warning2').style.display = 'flex';
@@ -105,4 +106,4 @@ const text2direct = document.getElementById("inverseddirect").value;
 	document.getElementById("directlog").onclick = function() {
 		console.log(textField + " - " + textField2);
 		}
-document.write(Date());
+//document.write(Date());
