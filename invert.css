@@ -81,31 +81,31 @@ body section#main div#content button {
 	margin: 0 0.2em 0 0.2em;
 	font-family: 'Open Sans', sans-serif;
 	}
-/*
-#alert1 {
-	background-color: #4CAF50; 
-  border: none;
-  color: white;
-  padding: 15px 32px;
-  text-align: center;
-  text-decoration: none;
-  display: inline-block;
-  font-size: 16px;
+
+/*ALERTS ETC*/
+@keyframes smooth {
+    from {
+      opacity: 0;
+    }
+    to {
+      opacity: 1;
+    }
 }
-*/
 
 div.alert{
-	display: flex;
+	animation: smooth 1s ease;
+	display: none;
 	max-width: fit-content;
 	padding: 2px 5px;
 	margin: 5px auto 5px auto;
 	border: 3px solid #B71226;
 	background-color: rgba(183, 18, 38, 0.3);
-	border-radius: 10px;
+	border-radius: 10px;  
 }
 
 div.warning{
-	display: flex;
+	animation: smooth 1s ease;
+	display: none;
 	max-width: fit-content;
 	padding: 2px 5px;
 	margin: 5px auto 5px auto;
